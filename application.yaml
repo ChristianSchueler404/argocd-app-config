@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v2.2.2+03b17e0
+kind: Application
+metadata:
+  name: argo-application
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/ChristianSchueler404/argocd-app-config.git
+    targetRevision: HEAD
+    path: dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp
+
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+  #Polls in 3Minute intervals, Webhooks can be used
