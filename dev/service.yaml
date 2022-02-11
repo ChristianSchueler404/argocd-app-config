@@ -10,3 +10,6 @@ spec:
       protocol: TCP
       targetPort: 8080
   type: LoadBalancer
+endpoints:
+  - addresses:
+      - "192.168.39.165"
