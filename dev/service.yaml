@@ -9,4 +9,9 @@ spec:
     - port: 8080
       protocol: TCP
       targetPort: 8080
-  type: LoadBalancer
+      name: http
+  type: ClusterIP
+  ipFamilies:
+    - IPv4
+status:
+  LoadBalancer: {}
