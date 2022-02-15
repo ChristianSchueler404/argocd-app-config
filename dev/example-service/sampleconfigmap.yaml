@@ -6,6 +6,5 @@ metadata:
   labels:
     app.kubernetes.io/part-of: argocd
 data:
-  foo: bar
-  dies: das
-  database_credentials: 12345678
+  database_url: "10.111.158.239:5432"
+  database_credentials: "12345678"
