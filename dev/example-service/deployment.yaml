@@ -19,7 +19,7 @@ spec:
             - containerPort: 8080
         env:
           - name: DATABASE_CREDENTIALS
-            valueFrom:
-              configMapKeyRef:
-                name: sampleconfigmap
-                key: database_credentials
+          valueFrom:
+            configMapKeyRef:
+              name: sampleconfigmap
+              key: database_credentials
