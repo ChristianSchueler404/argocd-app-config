@@ -17,9 +17,9 @@ spec:
           image: christianschueler404/example:0.1
           ports:
             - containerPort: 8080
-        env:
+          env:
           - name: DATABASE_CREDENTIALS
-          valueFrom:
-            configMapKeyRef:
-              name: sampleconfigmap
-              key: database_credentials
+            valueFrom:
+              configMapKeyRef:
+                name: sampleconfigmap
+                key: database_credentials
