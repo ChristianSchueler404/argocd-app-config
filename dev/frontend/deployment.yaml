@@ -16,4 +16,4 @@ spec:
         - name: myfrontend
           image: christianschueler404/example:frontend_v0.1
           ports:
-            - containerPort: 8080
+            - containerPort: 6060

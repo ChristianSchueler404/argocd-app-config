@@ -6,7 +6,7 @@ spec:
   selector:
     app: myfrontend
   ports:
-    - port: 80
+    - port: 6060
       protocol: TCP
       targetPort: 6060
   type: LoadBalancer
