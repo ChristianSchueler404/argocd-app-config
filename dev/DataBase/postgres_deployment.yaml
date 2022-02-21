@@ -12,6 +12,7 @@ spec:
       labels:
         app: postgres
     spec:
+      service-name: "postgres-service"
       containers:
         - name: postgres
           image: postgres:10.1
