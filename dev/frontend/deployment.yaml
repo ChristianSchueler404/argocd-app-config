@@ -16,7 +16,7 @@ spec:
         - name: myfrontend
           image: christianschueler404/example:frontend_v0.5
           ports:
-            - containerPort: 3000
+            - containerPort: 80
           env:
           - name: REACT_APP_BACKEND_URL
             valueFrom:
