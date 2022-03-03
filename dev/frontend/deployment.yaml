@@ -14,6 +14,12 @@ spec:
     spec:
       containers:
         - name: myfrontend
-          image: christianschueler404/example:frontend_v0.4
+          image: christianschueler404/example:frontend_v0.5
           ports:
             - containerPort: 3000
+          env:
+          - name: REACT_APP_BACKEND_URL
+            valueFrom:
+              configMapKeyRef:
+                name: frontendconfigmap
+                key: REACT_APP_BACKEND_URL

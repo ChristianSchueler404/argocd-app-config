@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: frontendconfigmap
+  namespace: demo
+  labels:
+    app.kubernetes.io/part-of: argocd
+data:
+  REACT_APP_BACKEND_URL: "10.98.118.40:8080"
