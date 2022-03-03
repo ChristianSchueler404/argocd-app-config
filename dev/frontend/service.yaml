@@ -7,6 +7,5 @@ spec:
     app: myfrontend
   ports:
     - port: 80
-      protocol: TCP
       targetPort: 80
   type: NodePort
