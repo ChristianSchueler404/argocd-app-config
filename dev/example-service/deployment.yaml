@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: christianschueler404/example:v0.4
+          image: christianschueler404/example:backend_v0.5
           ports:
             - containerPort: 8080
           env:
@@ -33,3 +33,8 @@ spec:
               secretKeyRef:
                 name: backendsecrets
                 key: database_password
+          - name: DATABASE_TABLE
+            valueFrom:
+              configMapKeyRef:
+                name: sampleconfigmap
+                key: database_table
