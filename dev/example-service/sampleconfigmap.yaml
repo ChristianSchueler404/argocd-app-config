@@ -8,4 +8,4 @@ metadata:
 data:
   database_url: "10.111.158.239:5432"
   database_username: admin
-  datbase_table: 
+  datbase_table: user
