@@ -10,3 +10,4 @@ data:
   database_username: admin
   database_table: postgresdb
   port: "8080"
+  foo: "bar"
